@@ -2,6 +2,7 @@ import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import logo from "../assets/images/logo_name_black_bg.png";
 
 const Footer = () => {
   return (
@@ -14,40 +15,80 @@ const Footer = () => {
       >
         {/* Left Section */}
         <motion.div
-          className="mb-8 lg:mb-0 w-fit flex flex-col items-center text-primaryText lg:items-start"
+          className="mb-8 lg:mb-0 w-full md:w-1/2 flex flex-col md:flex-row items-center  text-primaryText lg:items-center gap-3"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-3xl font-primaryFont text-textPrimary011 mb-4  text-primaryText  text-center md:text-start">
-            Artisan Antique
-          </h1>
-          <p className="text-textSecondary011 mb-4 w-full lg:w-3/5 text-center lg:text-start">
+          {/* <div className="text-3xl font-primaryFont text-textPrimary011 mb-4  text-primaryText  text-center md:text-start"> */}
+          <img src={logo} className="w-28 md:w-40" />
+          {/* </div> */}
+          <p className="mb-4 w-full lg:w-3/5 text-center lg:text-start">
             Lolins Hair Salon is a chic, expert space where your hair is
             transformed with personalized care and style.
           </p>
         </motion.div>
 
         <motion.nav
-          className="w-fit mb-8 md:mb-0"
+          className="w-full md:w-1/2 mb-8 md:mb-0"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <ul className="flex flex-col w-full  text-primaryText  font-stylishBold text-nowrap justify-center md:justify-end md:flex-row space-y-4 md:space-y-0 md:space-x-8">
-            {["Home", "About Us", "Services", "Blog", "Contact"].map(
-              (item, index) => (
-                <motion.li
-                  key={index}
-                  className="cursor-pointer"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  {item}
-                </motion.li>
-              )
-            )}
+          <ul className="flex w-full md:pl-7  text-primaryText text-[1.3rem]  text-nowrap justify-center md:justify-between flex-row space-y-0 space-x-4 md:space-x-8 md:pr-14 ">
+            {["Services", "About Us"].map((item, index) => (
+              <motion.li
+                key={index}
+                className="cursor-pointer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                {item}
+              </motion.li>
+            ))}
           </ul>
+          <div className="w-full md:pl-7 mt-10 text-primaryText flex justify-between">
+            <div className="mb-0">
+              <h2 className="text-textPrimary011 font-stylishBold text-[1.3rem] mb-4">
+                Opening Hours
+              </h2>
+              {/* <p className="text-textSecondary011">+1 (999) 888-77-66</p>
+              <p className="text-textSecondary011">hello@kayujati.com</p> */}
+              <ul>
+                <li className="flex w-36 justify-between">
+                  <div>MON: </div>
+                  <div>9am - 10pm</div>
+                </li>
+                <li className="flex w-36 justify-between">
+                  <div>MON: </div>
+                  <div>9am - 10pm</div>
+                </li>
+                <li className="flex w-36 justify-between">
+                  <div>TUE: </div>
+                  <div>9am - 10pm</div>
+                </li>
+                <li className="flex w-36 justify-between">
+                  <div>WED: </div>
+                  <div>9am - 10pm</div>
+                </li>
+                <li className="flex w-36 justify-between">
+                  <div>THU: </div>
+                  <div>9am - 10pm</div>
+                </li>
+                <li className="flex w-36 justify-between">
+                  <div>FRI: </div>
+                  <div>9am - 10pm</div>
+                </li>
+              </ul>
+            </div>
+            <div className="mb-0">
+              <h2 className="text-textPrimary011 font-stylishBold text-[1.3rem] mb-4">
+                Contact Us
+              </h2>
+              <p className="text-textSecondary011">+078 215 3647</p>
+              <p className="text-textSecondary011">hello@lolins.com</p>
+            </div>
+          </div>
         </motion.nav>
       </motion.div>
 
@@ -100,7 +141,7 @@ const Footer = () => {
           </div>
 
           <p className="text-sm text-textSecondary011 mt-6">
-            © 2021 — Copyright <br /> All Rights reserved
+            © 2024 — Copyright <br /> All Rights reserved
           </p>
         </motion.div>
 
@@ -110,41 +151,16 @@ const Footer = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <div className="w-full flex justify-start">
-            <div className="mb-0">
-              <h2 className="text-textPrimary011 font-stylishBold mb-4">
-                Contact Us
-              </h2>
-              <p className="text-textSecondary011">+1 (999) 888-77-66</p>
-              <p className="text-textSecondary011">hello@kayujati.com</p>
-            </div>
-          </div>
           <div className="w-full flex justify-between">
             <div className="m-0">
-              <h2 className="text-textPrimary011 font-stylishBold mb-4">
+              <h2 className="text-textPrimary011 font-stylishBold text-[1.3rem] mb-4">
                 Location
               </h2>
-              <p className="text-textSecondary011">
-                483920, Moscow, <br />
-                Myasnitskaya 22/2/5, Office 4
+              <p className="">
+                202 Beauty Block, <br />
+                Corner of 5th Main, <br />
+                South Beach, Miami, 33139
               </p>
-            </div>
-
-            <div className="flex flex-col justify-between">
-              <h2 className="text-textPrimary011 font-stylishBold mb-4">
-                Languages
-              </h2>
-              <div className="flex space-x-2 text-textSecondary011">
-                {["En", "Es", "Fr", "De", "Ru"].map((lang, index) => (
-                  <motion.p
-                    key={index}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    {lang}
-                  </motion.p>
-                ))}
-              </div>
             </div>
           </div>
         </motion.div>

@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* src/index.css */
 @font-face {
   font-family: "primaryFont";
-  src: url("../assets/fonts/Viagram-Regu.otf") format("opentype");
+  src: url("./assets/fonts/Viagram.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

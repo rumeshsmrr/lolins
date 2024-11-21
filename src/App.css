@@ -9,4 +9,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #161616;
+  font-family: "primaryFont", serif;
+  letter-spacing: 2px;
 }

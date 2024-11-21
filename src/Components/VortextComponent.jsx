@@ -13,7 +13,7 @@ const VortextComponent = () => {
         className="flex items-center justify-center h-full"
       >
         <div className="text-center">
-          <h1 className="text-white text-xl md:text-6xl font-bold">
+          <h1 className="text-secondary-100 p-2 text-5xl md:text-6xl  font-bold">
             Your hair would love us
           </h1>
         </div>

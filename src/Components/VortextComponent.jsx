@@ -6,9 +6,9 @@ const VortextComponent = () => {
     <div className="relative w-full h-[300px] bg-[#161616]">
       <Vortex
         backgroundColor="#161616"
-        particleCount={500}
+        particleCount={1000}
         rangeY={800}
-        baseHue={350} // Matches pink
+        baseHue={366} // not using now
         rangeHue={10}
         className="flex items-center justify-center h-full"
       >

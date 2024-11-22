@@ -2,7 +2,7 @@
   width: 100%;
   margin: 0;
   background-color: #161616;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+
 }
 
 body {
@@ -12,5 +12,5 @@ body {
   background-color: #161616;
   font-family: "primaryFont", serif;
   letter-spacing: 2px;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+
 }

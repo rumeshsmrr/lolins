@@ -2,6 +2,7 @@
   width: 100%;
   margin: 0;
   background-color: #161616;
+
 }
 
 body {
@@ -11,4 +12,5 @@ body {
   background-color: #161616;
   font-family: "primaryFont", serif;
   letter-spacing: 2px;
+
 }

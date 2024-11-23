@@ -3,7 +3,6 @@ import TestImg1 from "../assets/images/images/test1.jpg";
 import TestImg2 from "../assets/images/images/test2.jpg";
 import TestImg3 from "../assets/images/images/test3.jpg";
 
-
 const Stories = () => {
   const reviews = [
     {
@@ -51,13 +50,13 @@ const Stories = () => {
 
   return (
     <div className="px-5 py-10 text-primaryText">
-      <h2 className="mb-10 text-4xl text-center">Style Stories Shared</h2>
+      <h2 className="mb-10 text-4xl text-center sm:text-6xl">Style Stories Shared</h2>
       <div className="flex flex-col items-center">
         <div className="flex flex-wrap justify-center gap-6">
           {visibleCards.map((review, index) => (
             <div
               key={index}
-              className={`flex flex-col items-start bg-secondary-100 max-w-2xl w-full gap-4 p-6 text-black rounded-lg shadow-lg ${
+              className={`flex flex-col items-start bg-secondary-100 max-w-2xl w-full gap-4 p-6 text-black rounded-2xl shadow-lg ${
                 index === 1 ? "hidden sm:flex" : ""
               }`}
             >

@@ -8,8 +8,8 @@ import WhatWeOffer from "./Components/WhatWeOffer";
 function App() {
   return (
     <>
-      <Stories />
       <WhatWeOffer />
+      <Stories />
       <MapComponent />
       <VortextComponent />
       <Footer />

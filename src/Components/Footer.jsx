@@ -6,7 +6,7 @@ import logo from "../assets/images/logo_name_black_bg.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary011 p-8 rounded-t-lg">
+    <footer className="bg-primary011 w-full p-8 overflow-hidden rounded-t-lg">
       <motion.div
         className="container mx-auto flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:items-start"
         initial={{ opacity: 0 }}

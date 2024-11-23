@@ -52,7 +52,7 @@ const Stories = () => {
     <div className="px-5 py-10 text-primaryText">
       <h2 className="mb-10 text-4xl text-center sm:text-6xl">Style Stories Shared</h2>
       <div className="flex flex-col items-center">
-        <div className="flex flex-wrap justify-center gap-6 ">
+        <div className="flex flex-wrap justify-center gap-6">
           {visibleCards.map((review, index) => (
             <div
               key={index}
@@ -87,16 +87,21 @@ const Stories = () => {
 
         {/* Dots Navigation */}
         <div className="flex justify-center mt-10">
-          {reviews.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`w-4 h-4 mx-2 rounded-full ${
-                index === currentIndex ? "bg-white" : "bg-primary border-2 border-white"
-              }`}
-              aria-label={`Go to review ${index + 1}`}
-            ></button>
-          ))}
+          {reviews
+            .slice()
+            .reverse()
+            .map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(reviews.length - 1 - index)} // Reverse the index logic
+                className={`w-4 h-4 mx-2 rounded-full ${
+                  index === (reviews.length - 1 - currentIndex)
+                    ? "bg-white"
+                    : "bg-primary border-2 border-white"
+                }`}
+                aria-label={`Go to review ${reviews.length - index}`}
+              ></button>
+            ))}
         </div>
       </div>
     </div>

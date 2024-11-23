@@ -50,7 +50,9 @@ const Stories = () => {
 
   return (
     <div className="px-5 py-10 text-primaryText">
-      <h2 className="mb-10 text-4xl text-center sm:text-6xl">Style Stories Shared</h2>
+      <h2 className="mb-10 text-4xl text-center text-secondary-100 sm:text-6xl">
+        Style Stories Shared
+      </h2>
       <div className="flex flex-col items-center">
         <div className="flex flex-wrap justify-center gap-6">
           {visibleCards.map((review, index) => (
@@ -92,7 +94,9 @@ const Stories = () => {
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-4 h-4 mx-2 rounded-full ${
-                index === currentIndex ? "bg-white" : "bg-primary border-2 border-white"
+                index === currentIndex
+                  ? "bg-white"
+                  : "bg-primary border-2 border-white"
               }`}
               aria-label={`Go to review ${index + 1}`}
             ></button>

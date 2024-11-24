@@ -8,6 +8,7 @@ import WhoWeAre from "./Components/WhoWeAre";
 import CustomCursor from "./Components/CustomCursor";
 import Landing from "./Components/Landing";
 import ImageTile from "./Components/ImageCard";
+import SignatureServices from "./Components/SignatureServices";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <CustomCursor />
       <Landing />
       <WhatWeOffer />
+      <SignatureServices />
       <Stories />
       <WhoWeAre />
       <ImageTile />

@@ -50,7 +50,7 @@ const Stories = () => {
 
   return (
     <div className="px-5 py-10 text-primaryText">
-      <h2 className="mb-10 text-4xl text-center sm:text-6xl">Style Stories Shared</h2>
+      <h2 className="mb-10 text-4xl text-center sm:text-6xl text-assent font-primaryFont">Style Stories Shared</h2>
       <div className="flex flex-col items-center">
         <div className="flex flex-wrap justify-center gap-6">
           {visibleCards.map((review, index) => (

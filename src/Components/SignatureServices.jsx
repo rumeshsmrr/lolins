@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function SignatureServices() {
   return (
-    <div className="bg-primary text-white h-fit p-10 md:p-20 mb-32 relative font-primaryFont overflow-hidden">
+    <div className="bg-primary text-white h-fit p-10 md:p-20 mb-10 relative font-primaryFont overflow-hidden">
       {/* Container for entire component */}
       <motion.div
         className="flex flex-col md:flex-row gap-10 justify-between"
@@ -32,8 +32,12 @@ export default function SignatureServices() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          <div className="rounded-lg w-fit">
-            <img src={img1} alt="Color Alchemy" className="w-full rounded-lg" />
+          <div className="rounded-lg w-fit flex flex-col items-end">
+            <img
+              src={img1}
+              alt="Color Alchemy"
+              className="w-full md:w-4/5 rounded-lg"
+            />
           </div>
 
           <div className="text-right flex flex-col items-end">
@@ -56,7 +60,7 @@ export default function SignatureServices() {
           <img
             src={img3}
             alt="Luxury Treatments"
-            className="w-full rounded-lg"
+            className="w-fit  md:w-4/5 rounded-lg"
           />
         </div>
         <div className="text-left">
@@ -75,12 +79,12 @@ export default function SignatureServices() {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.7 }}
       >
-        <div className="flex flex-col gap-4 sm:w-1/2 self-end items-end sm:pr-8">
-          <div className="rounded-lg w-fit">
+        <div className="flex flex-col gap-4 sm:w-1/2   self-end items-end sm:pr-8">
+          <div className="rounded-lg w-fit flex flex-col items-end">
             <img
               src={img4}
               alt="Event Styling"
-              className="w-[40rem] rounded-lg"
+              className="w-fit  md:w-4/5 rounded-lg"
             />
           </div>
           <div className="text-right flex flex-col items-end">
@@ -94,14 +98,14 @@ export default function SignatureServices() {
 
       {/* Custom Cuts */}
       <motion.div
-        className="flex flex-col sm:flex-row mt-20 justify-between sm:relative sm:-top-[200px] sm:h-[400px]"
+        className="flex flex-col sm:flex-row mt-20 justify-between sm:relative sm:-top-[200px] sm:h-[350px]"
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.9 }}
       >
         <div className="flex flex-col h-fit sm:w-1/2">
           <div className="flex flex-col gap-4 items-start sm:pr-8 relative">
-            <div className="rounded-lg w-fit">
+            <div className="rounded-lg w-fit md:w-4/5">
               <img src={img2} alt="Custom Cuts" className="w-full rounded-lg" />
             </div>
           </div>

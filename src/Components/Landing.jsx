@@ -61,7 +61,7 @@ const Landing = ({ active, onSwitch, isSliding }) => {
       <div className="lg:flex flex-col lg:flex-row w-full lg:overflow-hidden ">
         <div className="relative h-[50vh] lg:h-screen lg:w-full overflow-hidden">
           <div
-            className="flex flex-col h-full bg-red-500 transition-transform duration-500"
+            className="flex flex-col h-full transition-transform duration-500"
             style={{
               transform: `translateY(-${active * 100}%)`, // Translate based on active index
             }}
@@ -130,7 +130,7 @@ const Landing = ({ active, onSwitch, isSliding }) => {
           animate={inView1 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} // Animate based on inView1
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <span className="text-[18rem] mt-[0vh]  lg:text-[46rem] lg:-mt-[10vh] text-[#e7e5d9a3] z-0 select-none">
+          <span className="text-[18rem] mt-[0vh]  lg:text-[46rem] lg:-mt-[15vh] text-[#e7e5d9a3] z-0 select-none">
             L
           </span>
         </motion.div>
@@ -145,7 +145,7 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(true);
   return (
     <>
-      <ul className="absolute flex flex-row lg:flex-row lg:justify-center lg:gap-28 lg:text-[20px] lg:py-2 items-start justify-between px-4 py-2 lg:items-center w-full text-white bg-[#16161680] backdrop-blur-[10px] z-10 lg:backdrop-blur-[15px] lg:overflow-hidden">
+      <ul className="absolute flex flex-row lg:flex-row lg:justify-center lg:gap-28 lg:text-[20px] lg:py-2 items-start justify-between px-4 py-2 lg:items-center w-full text-white bg-[#16161680] backdrop-blur-[10px] z-10 lg:backdrop-blur-[15px] lg:overflow-hidden lg:text-center">
         <li className="hidden lg:block lg:opacity-40 lg:hover:opacity-100 lg:hover:scale-110 lg:transition-all lg:duration-200">
           Home
         </li>
@@ -168,10 +168,10 @@ function Navbar() {
         <li className="hidden lg:block lg:opacity-40 lg:hover:opacity-100  lg:hover:scale-110 lg:transition-all lg:duration-200 ">
           Contact Us
         </li>
-        <div className="relative self-center">
+        <div className="relative self-center lg:hidden">
           {/* Burger Button */}
           <div
-            className="lg:hidden text-[25px] opacity-50 self-center cursor-pointer"
+            className=" text-[25px] opacity-50 self-center cursor-pointer"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? "☰" : "✖"}

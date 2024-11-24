@@ -30,7 +30,7 @@ export default function SignatureServices() {
           className="flex flex-col gap-4 items-end sm:w-1/2"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 0.3 }}
+          transition={{ duration: 1, delay: 0 }}
         >
           <div className="rounded-lg w-fit flex flex-col items-end">
             <img
@@ -54,7 +54,7 @@ export default function SignatureServices() {
         className="flex flex-col gap-4 sm:w-1/2 sm:pr-8 mt-11 items-center sm:items-start relative"
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 0.5 }}
+        transition={{ duration: 1, delay: 0 }}
       >
         <div className="rounded-lg w-fit">
           <img
@@ -77,7 +77,7 @@ export default function SignatureServices() {
         className="w-full flex justify-end mt-20 sm:h-[300px] relative"
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 0.7 }}
+        transition={{ duration: 1, delay: 0 }}
       >
         <div className="flex flex-col gap-4 sm:w-1/2   self-end items-end sm:pr-8">
           <div className="rounded-lg w-fit flex flex-col items-end">
@@ -101,7 +101,7 @@ export default function SignatureServices() {
         className="flex flex-col sm:flex-row mt-20 justify-between sm:relative sm:-top-[200px] sm:h-[350px]"
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 0.9 }}
+        transition={{ duration: 1, delay: 0 }}
       >
         <div className="flex flex-col h-fit sm:w-1/2">
           <div className="flex flex-col gap-4 items-start sm:pr-8 relative">
@@ -122,7 +122,7 @@ export default function SignatureServices() {
           className="flex justify-center mt-20 sm:absolute sm:bottom-[0px] right-0"
           initial={{ opacity: 0, y: -100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1.1 }}
+          transition={{ duration: 1, delay: 0 }}
         >
           <motion.a
             href="#"

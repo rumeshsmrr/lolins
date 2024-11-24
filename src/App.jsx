@@ -4,12 +4,20 @@ import MapComponent from "./Components/MapComponent";
 import VortextComponent from "./Components/VortextComponent";
 import Stories from "./Components/Stories";
 import WhatWeOffer from "./Components/WhatWeOffer";
+import WhoWeAre from "./Components/WhoWeAre";
+import CustomCursor from "./Components/CustomCursor";
+import Landing from "./Components/Landing";
+import ImageTile from "./Components/ImageCard";
 
 function App() {
   return (
     <>
+      <CustomCursor />
+      <Landing />
       <WhatWeOffer />
       <Stories />
+      <WhoWeAre />
+      <ImageTile />
       <MapComponent />
       <VortextComponent />
       <Footer />

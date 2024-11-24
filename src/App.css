@@ -2,7 +2,6 @@
   width: 100%;
   margin: 0;
   background-color: #161616;
-
 }
 
 body {
@@ -12,5 +11,9 @@ body {
   background-color: #161616;
   font-family: "primaryFont", serif;
   letter-spacing: 2px;
+  cursor: none;
+}
 
+.custom-cursor {
+  transition: transform 0.15s ease-out, background-color 0.2s;
 }

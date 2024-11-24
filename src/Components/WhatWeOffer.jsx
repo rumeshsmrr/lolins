@@ -10,7 +10,7 @@ export default function WhatWeOffer() {
     const scrollPosition = window.scrollY;
     const windowHeight = window.innerHeight;
 
-    const startScroll = windowHeight * 0.7; // Start scaling after 20% of the viewport height
+    const startScroll = windowHeight * 0.9; // Start scaling after 20% of the viewport height
     const scaleMultiplier = 4; // Slower scaling (lower factor)
 
     if (scrollPosition > startScroll && scrollPosition < windowHeight) {

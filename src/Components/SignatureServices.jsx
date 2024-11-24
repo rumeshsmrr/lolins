@@ -32,8 +32,8 @@ export default function SignatureServices() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          <div className="rounded-md w-fit">
-            <img src={img1} alt="Color Alchemy" className="w-full rounded-md" />
+          <div className="rounded-lg w-fit">
+            <img src={img1} alt="Color Alchemy" className="w-full rounded-lg" />
           </div>
 
           <div className="text-right flex flex-col items-end">
@@ -52,11 +52,11 @@ export default function SignatureServices() {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
       >
-        <div className="rounded-md w-fit">
+        <div className="rounded-lg w-fit">
           <img
             src={img3}
             alt="Luxury Treatments"
-            className="w-full rounded-md"
+            className="w-full rounded-lg"
           />
         </div>
         <div className="text-left">
@@ -76,11 +76,11 @@ export default function SignatureServices() {
         transition={{ duration: 1, delay: 0.7 }}
       >
         <div className="flex flex-col gap-4 sm:w-1/2 self-end items-end sm:pr-8">
-          <div className="rounded-md w-fit">
+          <div className="rounded-lg w-fit">
             <img
               src={img4}
               alt="Event Styling"
-              className="w-[40rem] rounded-md"
+              className="w-[40rem] rounded-lg"
             />
           </div>
           <div className="text-right flex flex-col items-end">
@@ -101,8 +101,8 @@ export default function SignatureServices() {
       >
         <div className="flex flex-col h-fit sm:w-1/2">
           <div className="flex flex-col gap-4 items-start sm:pr-8 relative">
-            <div className="rounded-md w-fit">
-              <img src={img2} alt="Custom Cuts" className="w-full rounded-md" />
+            <div className="rounded-lg w-fit">
+              <img src={img2} alt="Custom Cuts" className="w-full rounded-lg" />
             </div>
           </div>
           <div className="text-left">

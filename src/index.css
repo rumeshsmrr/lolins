@@ -6,6 +6,7 @@
 @font-face {
   font-family: "primaryFont";
   src: url("./assets/fonts/Viagram.otf") format("truetype");
+  src: url("./assets/fonts/Soligant.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

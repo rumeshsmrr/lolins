@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Rasa
+- Font Author: undefined
+- Font Source: https://fonts.gstatic.com/s/rasa/v22/xn76YHIn1mWmVKl8ZtAM9NrJfN5GJW41fcvN2KT4.ttf
+- Font License: undefined)

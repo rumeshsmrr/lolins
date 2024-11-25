@@ -6,7 +6,10 @@ import { motion } from "framer-motion";
 
 export default function SignatureServices() {
   return (
-    <div className="bg-primary text-white h-fit p-10 md:p-20 mb-10 relative font-primaryFont overflow-hidden">
+    <div
+      className="bg-primary text-white h-fit p-10 md:p-20 mb-10 relative font-primaryFont overflow-hidden"
+      id="services"
+    >
       {/* Container for entire component */}
       <motion.div
         className="flex flex-col md:flex-row gap-10 justify-between"
@@ -119,7 +122,7 @@ export default function SignatureServices() {
 
         {/* Book an Appointment Button */}
         <motion.div
-          className="flex justify-center mt-20 sm:absolute sm:bottom-[0px] right-0"
+          className="flex justify-center mt-20 sm:absolute sm:bottom-[0px] right-0 cursor-none"
           initial={{ opacity: 0, y: -100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0 }}

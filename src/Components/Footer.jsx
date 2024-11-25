@@ -1,8 +1,19 @@
-import React from "react";
+// import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import logo from "../assets/images/logo_name_black_bg.png";
+
+const links = {
+  services: {
+    name: "Services",
+    link: "#services",
+  },
+  aboutUs: {
+    name: "About Us",
+    link: "#aboutUs",
+  },
+};
 
 const Footer = () => {
   return (
@@ -35,17 +46,27 @@ const Footer = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <ul className="flex w-full md:pl-7  text-primaryText text-[1.3rem]  text-nowrap justify-center md:justify-between flex-row space-y-0 space-x-4 md:space-x-8 md:pr-14 ">
-            {["Services", "About Us"].map((item, index) => (
-              <motion.li
-                key={index}
-                className="cursor-pointer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                {item}
-              </motion.li>
-            ))}
+          <ul className="flex w-full md:pl-7  text-primaryText text-[1.3rem]  text-nowrap justify-center md:justify-between flex-row space-y-0 space-x-4 md:space-x-8  ">
+            <motion.nav
+              className="w-full  mb-8 md:mb-0"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+            >
+              <ul className="flex w-full md:pl-7 text-primaryText text-[1.3rem] text-nowrap justify-center md:justify-between flex-row space-y-0 space-x-4 md:space-x-8 ">
+                {Object.values(links).map((item, index) => (
+                  <motion.li
+                    key={index}
+                    id="link"
+                    className=""
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <a href={item.link}>{item.name}</a>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.nav>
           </ul>
           <div className="w-full md:pl-7 mt-10 text-primaryText flex justify-between">
             <div className="mb-0">
@@ -81,9 +102,9 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="mb-0">
+            <div className="mb-0 text-right">
               <h2 className="text-textPrimary011 font-stylishBold text-[1.3rem] mb-4">
-                Contact Us
+                <a href="#contactUs"> Contact Us</a>
               </h2>
               <p className="text-textSecondary011">+078 215 3647</p>
               <p className="text-textSecondary011">hello@lolins.com</p>

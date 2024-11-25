@@ -12,8 +12,31 @@ body {
   font-family: "primaryFont", serif;
   letter-spacing: 2px;
   cursor: none;
+  scrollbar-width: thin; /* Firefox - allows you to set thin scrollbar */
+  scrollbar-color: #6b7280 #e5e7eb; /* Firefox - thumb color, track color */
 }
 
 .custom-cursor {
   transition: transform 0.15s ease-out, background-color 0.2s;
+}
+
+/* Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the entire scrollbar */
+  height: 12px; /* Height of the scrollbar (for horizontal scrollbars) */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Color of the track (scrollbar background) */
+  border-radius: 10px; /* Optional: Adds rounded corners to the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a39595; /* Color of the scroll thumb */
+  border-radius: 10px; /* Optional: Adds rounded corners to the thumb */
+  /* Optional: Adds padding around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563; /* Color of the thumb when hovered */
 }

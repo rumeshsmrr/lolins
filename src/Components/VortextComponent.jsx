@@ -1,22 +1,18 @@
 import React from "react";
 import { Vortex } from "../ui/Vortex";
-
+import Footer from "./Footer";
 const VortextComponent = () => {
   return (
-    <div className="relative w-full h-[300px] bg-[#161616]">
+    <div className="relative w-full bg-[#161616]">
       <Vortex
         backgroundColor="#161616"
-        particleCount={1000}
-        rangeY={800}
+        particleCount={5000}
+        rangeY={2500}
         baseHue={366} // not using now
         rangeHue={10}
-        className="flex items-center justify-center h-full"
+        className="flex flex-col items-center justify-center "
       >
-        <div className="text-center">
-          <h1 className="text-secondary-100 p-2 text-5xl md:text-6xl  font-bold">
-            Your hair would love us
-          </h1>
-        </div>
+        <Footer />
       </Vortex>
     </div>
   );

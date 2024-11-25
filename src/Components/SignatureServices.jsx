@@ -137,7 +137,7 @@ export default function SignatureServices() {
             <motion.div
               className="absolute top-0 left-0 rounded-full h-full w-14 bg-assent transition-all ease-out duration-300"
               variants={{
-                initial: { width: "56px" },
+                initial: { width: "0px" },
                 hover: { width: "100%" },
               }}
             ></motion.div>

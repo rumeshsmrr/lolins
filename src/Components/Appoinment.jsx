@@ -9,7 +9,7 @@ const Appointment = () => {
         </h1>
         <form className="flex flex-col gap-6 mb-10">
           {/* Name Input */}
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+          <div className="flex flex-col md:flex-row md:gap-4 md:items-center md:justify-between">
             <label className="mb-2 text-lg text-secondaryText md:mb-0 md:w-1/4">
               Name
             </label>
@@ -21,7 +21,7 @@ const Appointment = () => {
           </div>
 
           {/* Contact Number Input */}
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+          <div className="flex flex-col md:flex-row md:gap-4 md:items-center md:justify-between">
             <label className="mb-2 text-lg text-secondaryText md:mb-0 md:w-1/4">
               Contact Number
             </label>
@@ -33,7 +33,7 @@ const Appointment = () => {
           </div>
 
           {/* Email Input */}
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+          <div className="flex flex-col md:flex-row md:gap-4 md:items-center md:justify-between">
             <label className="mb-2 text-lg text-secondaryText md:mb-0 md:w-1/4">
               Email Address
             </label>
@@ -45,7 +45,7 @@ const Appointment = () => {
           </div>
 
           {/* Preferred Service Dropdown */}
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+          <div className="flex flex-col md:flex-row md:gap-4 md:items-center md:justify-between">
             <label className="mb-2 text-lg text-secondaryText md:mb-0 md:w-1/4">
               Preferred Service
             </label>

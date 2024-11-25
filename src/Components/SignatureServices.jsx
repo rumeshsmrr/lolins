@@ -11,13 +11,18 @@ export default function SignatureServices() {
       id="services"
     >
       {/* Container for entire component */}
-      <div className="flex flex-col md:flex-row gap-10 justify-between">
+      <motion.div
+        className="flex flex-col md:flex-row gap-10 justify-between"
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
         {/* Title Section */}
         <div className="flex-1 md:flex-none">
           <motion.h1
             className="text-3xl sm:text-4xl md:text-6xl lg:text-9xl font-light leading-tight"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
             Signature <br /> services
@@ -26,8 +31,8 @@ export default function SignatureServices() {
 
         <motion.div
           className="flex flex-col gap-4 items-end sm:w-1/2"
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0 }}
         >
           <div className="rounded-lg w-fit flex flex-col items-end">
@@ -45,7 +50,7 @@ export default function SignatureServices() {
             </p>
           </div>
         </motion.div>
-      </div>
+      </motion.div>
 
       {/* Luxury Treatments */}
       <motion.div

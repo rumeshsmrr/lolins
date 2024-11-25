@@ -12,7 +12,10 @@ const WhoWeAre = () => {
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row lg:h-screen lg:overflow-hidden lg:justify-between lg:gap-5">
+      <div
+        className="flex flex-col lg:flex-row lg:h-screen lg:overflow-hidden lg:justify-between lg:gap-5"
+        id="aboutUs"
+      >
         <motion.div
           className="lg:flex lg:flex-col text-[#A49696] lg:px-10 lg:items-left lg:justify-center lg:w-[40vw]"
           ref={ref1}

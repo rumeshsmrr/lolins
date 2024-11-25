@@ -147,10 +147,10 @@ function Navbar() {
     <>
       <ul className="absolute flex flex-row lg:flex-row lg:justify-center lg:gap-28 lg:text-[20px] lg:py-2 items-start justify-between px-4 py-2 lg:items-center w-full text-white bg-[#16161680] backdrop-blur-[10px] z-10 lg:backdrop-blur-[15px] lg:overflow-hidden lg:text-center">
         <li className="hidden lg:block lg:opacity-40 lg:hover:opacity-100 lg:hover:scale-110 lg:transition-all lg:duration-200">
-          Home
+          <a href="#"> Home</a>
         </li>
         <li className="hidden lg:block lg:opacity-40 lg:hover:opacity-100 lg:hover:scale-110 lg:transition-all lg:duration-200 ">
-          Services
+          <a href="#services">Services</a>
         </li>
         <li>
           <div className="flex flex-col group text-left lg:text-center ">
@@ -163,10 +163,10 @@ function Navbar() {
           </div>
         </li>
         <li className="hidden lg:block lg:opacity-40 lg:hover:opacity-100 lg:hover:scale-110 lg:transition-all lg:duration-200 ">
-          About Us
+          <a href="#aboutUs">About Us</a>
         </li>
         <li className="hidden lg:block lg:opacity-40 lg:hover:opacity-100  lg:hover:scale-110 lg:transition-all lg:duration-200 ">
-          Contact Us
+          <a href="#contactUs">Contact Us</a>
         </li>
         <div className="relative self-center lg:hidden">
           {/* Burger Button */}
@@ -184,10 +184,18 @@ function Navbar() {
             }`}
           >
             <ul className="font-thin text-[15px] text-center">
-              <li className="mb-2">Home</li>
-              <li className="mb-2">About</li>
-              <li className="mb-2">Services</li>
-              <li className="mb-2">Contact</li>
+              <li className="mb-2">
+                <a href="#">Home</a>
+              </li>
+              <li className="mb-2">
+                <a href="#aboutUs">About</a>
+              </li>
+              <li className="mb-2">
+                <a href="#services">Services</a>
+              </li>
+              <li className="mb-2">
+                <a href="#contactUs">Contact</a>
+              </li>
             </ul>
           </div>
         </div>

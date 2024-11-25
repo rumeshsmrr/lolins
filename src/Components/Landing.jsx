@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import img1 from "../assets/images/Landing_Images/Walpaper1.png";
-import img2 from "../assets/images/Landing_Images/Walpaper2.png";
+import img1 from "../assets/images/Landing_Images/img23.png";
+import img2 from "../assets/images/Landing_Images/img24.png";
 import img3 from "../assets/images/Landing_Images/Walpaper3.png";
 import img4 from "../assets/images/Landing_Images/Walpaper4.png";
 import img5 from "../assets/images/Landing_Images/Walpaper5.png";

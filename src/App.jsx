@@ -13,7 +13,6 @@ import SignatureServices from "./Components/SignatureServices";
 
 import Appointment from "./Components/Appoinment";
 
-
 function App() {
   return (
     <>
@@ -30,7 +29,7 @@ function App() {
       <ImageTile />
       <MapComponent />
       <VortextComponent />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

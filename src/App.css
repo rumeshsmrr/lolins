@@ -15,7 +15,9 @@ body {
   scrollbar-width: thin; /* Firefox - allows you to set thin scrollbar */
   scrollbar-color: #6b7280 #e5e7eb; /* Firefox - thumb color, track color */
 }
-
+a {
+  cursor: none;
+}
 .custom-cursor {
   transition: transform 0.15s ease-out, background-color 0.2s;
 }

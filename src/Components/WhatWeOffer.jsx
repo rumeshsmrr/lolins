@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
-import img from "../assets/images/Services section image.jpg";
+import img from "../assets/images/services section image.png";
 
 export default function WhatWeOffer() {
   const controls = useAnimation();

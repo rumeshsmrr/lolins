@@ -38,8 +38,10 @@ const MapComponent = () => {
   return (
     <div className="relative w-full h-[300px] md:h-[500px] bg-black flex flex-col items-center justify-center rounded-lg overflow-hidden mix-blend-luminosity">
       {/* Title above the map */}
-      <div className="absolute top-4 text-center z-10">
-        <h2 className="text-white text-xl md:text-3xl font-serif">Find Us</h2>
+      <div className="absolute bottom-10 text-center z-10">
+        <h2 className=" text-primary text-4xl md:text-6xl font-serif">
+          Find Us
+        </h2>
       </div>
       {/* Leaflet Map */}
       <MapContainer

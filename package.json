@@ -19,10 +19,19 @@
     "react-icons": "^5.3.0",
     "react-intersection-observer": "^9.13.1",
     "react-leaflet": "^4.2.1",
+<<<<<<< HEAD
     "react-slick": "^0.30.2",
     "react-toastify": "^10.0.6",
     "simplex-noise": "^4.0.3",
     "slick-carousel": "^1.8.1"
+=======
+    "react-toastify": "^10.0.6",
+    "show-toast": "^1.1.4",
+    "simplex-noise": "^4.0.3",
+    "sweetalert2": "^11.14.5",
+    "sweetalert2-react-content": "^5.0.7",
+    "swiper": "^11.1.15"
+>>>>>>> 281ee15c1d5fe3cd2366d7430601f782f70b69a5
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",

@@ -21,7 +21,7 @@ function App() {
     // Simulate a loading delay 
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // Adjust time as needed
+    }, 3000); // Adjust time as needed
 
     return () => clearTimeout(timer);
   }, []);

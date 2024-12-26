@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo.png"; // Adjust path to your logo image
+import logo from "../assets/logo.png"; 
 
 const Preloader = () => {
   return (

@@ -44,20 +44,21 @@ const Stories = () => {
     arrows: false,
     autoplay: true,
     autoplaySpeed: 4000,
-    afterChange: (index) => setCurrentIndex(index), // Update the currentIndex on slide change
+    afterChange: (index) => setCurrentIndex(index),
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1024, // Tablet
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 768, // Mobile
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          infinite: true,
         },
       },
     ],
@@ -69,18 +70,19 @@ const Stories = () => {
         Style Stories Shared
       </h2>
       <div className="flex flex-col items-center">
-        <div className="max-w-7xl ">
+        <div className="md:max-w-7xl w-full  ">
           <Slider {...settings}>
             {reviews.map((review, index) => (
               <div
                 key={index}
-                className="flex flex-col items-start bg-secondary-100   p-10 text-black rounded-[3.5rem] rounded-br-[1%] shadow-lg"
+                className="flex flex-col items-start bg-secondary-100 p-10 text-black rounded-[3.5rem] rounded-br-[1%] shadow-lg"
               >
                 <div className="flex items-center gap-8">
                   <img
                     src={review.image}
-                    alt={review.name}
+                    alt={`Review by ${review.name}: ${review.title}`}
                     className="object-cover w-24 h-24 rounded-tl-[100%] rounded-tr-[100%] rounded-bl-[100%] rounded-br-[25%]"
+                    loading="lazy"
                   />
                   <div>
                     <h3 className="text-3xl font-bold">{review.name}</h3>
@@ -107,6 +109,7 @@ const Stories = () => {
           {reviews.map((_, index) => (
             <span
               key={index}
+              aria-label={`Go to slide ${index + 1}`}
               className={`w-4 h-4 rounded-full block transition-all duration-300 ease-in-out ${
                 index === currentIndex
                   ? "bg-white scale-125"

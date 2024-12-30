@@ -23,11 +23,11 @@ const WhoWeAre = () => {
           animate={inView1 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} // Animate based on inView1
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <h1 className="lg:font-Soligant text-[4.5rem] mt-10 lg:mt-0 text-center lg:text-left lg:text-[8rem]">
+          <h1 className="lg:font-Soligant text-[3.5rem] mt-10 lg:mt-0 text-center lg:text-left lg:text-[8rem]">
             Who&nbsp;Are
             <br /> We
           </h1>
-          <p className="font-Soligant text-[1.8rem] lg:px-2 px-8 text-center lg:text-left lg:text-[1.5rem] font-light">
+          <p className="font-Soligant text-[1.2rem] lg:px-2 px-8 text-center lg:text-left lg:text-[1.5rem] font-light">
             At Lolins Hair Salon, we are a dynamic team of passionate
             professionals committed to delivering exceptional, personalized hair
             care for every client.

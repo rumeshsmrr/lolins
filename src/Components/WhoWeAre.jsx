@@ -23,7 +23,7 @@ const WhoWeAre = () => {
           animate={inView1 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} // Animate based on inView1
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <h1 className="lg:font-Soligant text-[3.5rem] mt-10 lg:mt-0 text-center lg:text-left lg:text-[8rem]">
+          <h1 className="lg:font-Soligant text-3xl sm:text-4xl md:text-6xl lg:text-9xl  mt-10 lg:mt-0 text-center lg:text-left ">
             Who&nbsp;Are
             <br /> We
           </h1>

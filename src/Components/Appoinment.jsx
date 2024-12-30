@@ -229,8 +229,8 @@ const Appointment = () => {
                 selectedValue &&
                 inputValue3 &&
                 inputValue4
-                  ? "hover:bg-secondary-200 hover:text-primary cursor-none"
-                  : "opacity-50 cursor-none"
+                  ? "hover:bg-secondary-200 hover:text-primary"
+                  : "opacity-50 cursor-not-allowed"
               }`}
               whileHover={
                 inputValue &&
@@ -242,8 +242,8 @@ const Appointment = () => {
                 selectedValue &&
                 inputValue3 &&
                 inputValue4
-                  ? "hover"
-                  : ""
+                  ? { scale: 1.05 } // Slight scaling effect for feedback
+                  : {}
               }
               initial="initial"
               animate="initial"
@@ -275,11 +275,13 @@ const Appointment = () => {
               }
             >
               <motion.div
-                className="absolute top-0 left-0 h-full transition-all duration-300 ease-out rounded-md w-14 bg-assent"
+                className="absolute top-0 left-0 h-full transition-all duration-300 ease-out rounded-md bg-assent"
                 variants={{
-                  initial: { width: "56px" },
+                  initial: { width: "0%" }, // Ensure percentage-based width
                   hover: { width: "100%" },
                 }}
+                animate="initial" // Default animation
+                whileHover="hover" // Hover animation trigger
               ></motion.div>
               <span className="relative text-sm font-bold tracking-wider text-black sm:text-2xl">
                 Book

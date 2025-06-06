@@ -106,7 +106,7 @@ const Footer = () => {
               <h2 className="text-textPrimary011 font-stylishBold text-[1.3rem] mb-4">
                 <a href="#contactUs"> Contact Us</a>
               </h2>
-              <p className="text-textSecondary011">+078 215 3647</p>
+              <p className="text-textSecondary011">+1 (305) 555-0198</p>
               <p className="text-textSecondary011">hello@lolins.com</p>
             </div>
           </div>
